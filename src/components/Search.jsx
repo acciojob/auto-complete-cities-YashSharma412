@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
-import suggestionContext from "../Contexts/suggestionContext";
+import suggestionContext from "../Contexts/suggestionContext.js";
 import cities_data from "../data/cities_data";
 function Search({ searchQuery, setSearchQuery }) {
   const { suggestions, setSuggestions, isDropdownVisible, setDropdownVisible } =
