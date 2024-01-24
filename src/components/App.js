@@ -1,13 +1,17 @@
-
 import React from "react";
-import './../styles/App.css';
-
+import { useState } from "react";
+import "./../styles/App.css";
+import List from "./List";
+import Search from "./Search";
 const App = () => {
-  return (
-    <div>
-        {/* Do not remove the main div */}
-    </div>
-  )
-}
+  const [searchQuery, setSearchQuery] = useState("");
 
-export default App
+  return (
+    <div className="App" >
+      <Search searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
+      <List setSearchQuery={setSearchQuery}/>
+    </div>
+  );
+};
+
+export default App;
