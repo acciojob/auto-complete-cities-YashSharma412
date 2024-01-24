@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./components/App";
-import SuggestionProvider from "./Contexts/SuggestionProvider";
+import SuggestionProvider from "./Contexts/suggestionProvider";
 ReactDOM.render(
   <SuggestionProvider>
     <App />
