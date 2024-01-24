@@ -1,6 +1,6 @@
 import React from "react";
 import { useContext } from "react";
-import suggestionContext from "../Contexts/suggestionContext";
+import suggestionContext from "../Contexts/suggestionContext.js";
 function List({ setSearchQuery }) {
   const { suggestions, isDropdownVisible } = useContext(suggestionContext);
 

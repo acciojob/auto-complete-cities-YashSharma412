@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import suggestionContext from "./suggestionContext";
+import suggestionContext from "./suggestionContext.js";
 import cities_data from "../data/cities_data";
 const SuggestionProvider = (props) => {
   const [suggestions, setSuggestions] = useState(() => cities_data);
